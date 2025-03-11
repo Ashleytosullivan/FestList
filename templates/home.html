@@ -1,0 +1,16 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Playlist Blog</title>
+</head>
+<body>
+    <h1>Spotify Playlist Blog</h1>
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description }}</p>
+        <a href="{{ post.spotify_url }}" target="_blank">Listen on Spotify</a>
+        <p>Posted by {{ post.author }} on {{ post.created_at }}</p>
+    {% endfor %}
+</body>
+</html>
