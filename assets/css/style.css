@@ -1,0 +1,19 @@
+/*Google Fonts import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    --primary-font: Roboto Slab, sans-serif;
+    --primary-colour: #f8f9fa;
+}
+
+
+/* Global Styles */
+body {
+    font-family: var(--primary-font);
+    padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
+}
+
+.section {
+    padding-top: 4rem; /* prevent navbar overlap */
+}
